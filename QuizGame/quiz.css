@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #F3F4F6;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz {
+    background: #FFFFFF;
+    color: #1E293B;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(15, 23, 42, 0.08);
+}
+
+.quiz-container {
+    width: 600px;
+    background: #FFFFFF;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(15, 23, 42, 0.08);
+}
+
+#question {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #1E293B;
+}
+
+#options {
+    display: flex;
+    flex-direction: column;
+}
+
+#score {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #334155;
+}
+
+.btn {
+    padding: 13px;
+    margin-bottom: 12px;
+    background: #F1F5F9;
+    color: #1E293B;
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover:not(:disabled) {
+    background: #DBEAFE;
+    border-color: #93C5FD;
+}
+
+.btn:disabled {
+    cursor: not-allowed;
+}
+
+#nextButton {
+    padding: 12px 25px;
+    margin-top: 20px;
+    background: #2563EB;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#nextButton:hover {
+    background: #1D4ED8;
+}
+
+.quiz.completed {
+    text-align: center;
+    padding: 40px 30px;
+    border: 2px solid #BBF7D0;
+    background: #F0FDF4;
+}
+
+.celebration {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.completion-title {
+    font-size: 28px;
+    color: #166534;
+    margin-bottom: 12px;
+}
+
+.completion-message {
+    font-size: 16px;
+    color: #475569;
+    margin-bottom: 25px;
+}
+
+.final-score {
+    background: #FFFFFF;
+    border: 2px solid #86EFAC;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.final-score h2 {
+    font-size: 18px;
+    color: #475569;
+    margin-bottom: 10px;
+}
+
+.final-score p {
+    font-size: 38px;
+    font-weight: bold;
+    color: #16A34A;
+}
+
+#restartButton {
+    padding: 13px 28px;
+    background: #16A34A;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#restartButton:hover {
+    background: #15803D;
+}
